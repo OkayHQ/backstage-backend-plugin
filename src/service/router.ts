@@ -57,7 +57,7 @@ export async function createRouter(
           .digest('hex');
   
     response.json({
-      url: `${domain}/dashboards/${dashboardUuid}?showSidebar=false&nonce=${nonce}&ts=${ts}&id=${id}&signature=${signature}`
+      url: `${domain}/dashboards/${dashboardUuid}?showSidebar=false&readOnly=true&nonce=${nonce}&ts=${ts}&id=${id}&signature=${signature}`
     });
   })
 
