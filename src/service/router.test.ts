@@ -27,9 +27,8 @@ describe('createRouter', () => {
   beforeAll(async () => {
     const router = await createRouter({
       logger: getVoidLogger(),
-      config:  new ConfigReader({
-        okay: {
-        }
+      config: new ConfigReader({
+        okay: {}
       })
     });
     app = express().use(router);

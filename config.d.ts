@@ -14,27 +14,27 @@
  * limitations under the License.
  */
 export interface Config {
-    okay: {
-        /**
-         * Configuration for iframing dashboards
-         * @visibility backend
-         */
-         iframe: {
-            /**
-             * Secret to sign requests for iframing
-             * @visibility secret
-             */
-            secret: string;
-            
-            /**
-             * Id to send with requests for iframing
-             */
-            id: string;
+  okay: {
+    /**
+     * Configuration for iframing dashboards
+     * @visibility backend
+     */
+    iframe: {
+      /**
+       * Secret to sign requests for iframing
+       * @visibility secret
+       */
+      secret: string;
 
-            /**
-             * Domain to make iframe requests to, default is https://app.okayhq.com
-             */
-            domain?: string;
-        }
-    }
+      /**
+       * Id to send with requests for iframing
+       */
+      id: string;
+
+      /**
+       * Domain to make iframe requests to, default is https://app.okayhq.com
+       */
+      domain?: string;
+    };
+  };
 }
