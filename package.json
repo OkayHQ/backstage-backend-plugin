@@ -49,6 +49,9 @@
     "msw": "^0.42.0",
     "supertest": "^4.0.2"
   },
+  "resolutions": {
+    "parse-path": "^5.0.0"
+  },
   "files": [
     "dist",
     "config.d.ts"
