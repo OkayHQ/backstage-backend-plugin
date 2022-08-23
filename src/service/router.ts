@@ -47,7 +47,7 @@ export async function createRouter(options: RouterOptions): Promise<express.Rout
     const domain = (domainOpt ? domainOpt : 'https://app.okayhq.com').trim().replace(/\/+$/, '');
 
     // securely generate a nonce and TS, then sign the payload
-    const nonce = crypto.randomBytes(16).toString('base64');
+    const nonce = crypto.randomBytes(16).toString('base64url');
     const ts = new Date().toISOString();
     const signature = crypto
       .createHmac('sha1', secret)
